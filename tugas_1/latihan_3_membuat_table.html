@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tabel</title>
+    </head>
+    <style>
+        
+    .table {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 600px;
+      border: 1px solid #ccc;
+      font-family: Arial, sans-serif;
+    }
+
+    .row {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .row.header {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .cell {
+      flex: 1;
+      padding: 10px;
+      border-right: 1px solid #ccc;
+    }
+
+    .cell:last-child {
+      border-right: none;
+    }
+
+    .row:last-child {
+      border-bottom: none;
+    }
+ 
+    </style>
+    <body>
+         <div class="table">
+    <div class="row header">
+      <div class="cell">Nama</div>
+      <div class="cell">Umur</div>
+      <div class="cell">Kota</div>
+    </div>
+    <div class="row">
+      <div class="cell">Budi</div>
+      <div class="cell">25</div>
+      <div class="cell">Jakarta</div>
+    </div>
+    <div class="row">
+      <div class="cell">Sari</div>
+      <div class="cell">30</div>
+      <div class="cell">Bandung</div>
+    </div>
+    <div class="row">
+      <div class="cell">Andi</div>
+      <div class="cell">28</div>
+      <div class="cell">Surabaya</div>
+    </div>
+ 
+    </body>
+</html>
