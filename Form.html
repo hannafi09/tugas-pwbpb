@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        .p.ex{
+            color: rgb(red, green, blue);
+        }
+        .legend{
+            font-size: 18px;
+            font-weight: bold;
+            color: orange;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+    </style>
+    
+ </head>
+ <body>
+    <marquee behavior="alternate" direction="padding-left"><h2 style="color: red;">Demo membuat kontrol text</marquee>
+    <form>
+        <fieldset>
+          <legend>Bio data</legend>
+        <p style="color:rgb(0, 0, 0);">Nama :</p>
+         <input type="text" name="txtNama" size="30" />
+          <p style="color:rgb(0, 0, 0);">Password :</p>
+         <input type="password" name="txtPassword" size="30" />
+         <p style="color: rgb(0, 0, 0);">Alamat :</p>
+           <input type="text" name="txtalamat" size="50" />
+           <p style="color: rgb(0, 0, 0);"> No. Telepon :</p>
+             <input type="text" name="txttelepon" size="20" />
+             <p>Jenkel</p>
+            <input type="radio" name="gender" value="male">
+            male
+            <input type="radio" name="gender" value="female">
+            Female
+            <p>Jurusan Anda</p>
+           <select>
+            <option value="pplg">PPLG</option>
+            <option value="tkj">TKJ</option>
+            <option value="mplb">MPLB</option>
+            <option value="ulw">ULW</option>
+           </select>
+             <p><input type="file" value="file"> masukkan file</p>
+             <p><input type="file" accept="image/*" id="gambar" name="gambar">
+                <button type="submit">Unggah Gambar</button>
+             <input type="checkbox">Syarat sudah dipenuhi</p>
+              <p>Saran Anda</p>
+              <textarea id="pesan" rows="4" cols="50"></textarea>
+            <p> <input type="submit" value="Submit" >
+           <input type="reset" value="Reset"></p>
+           
+          
+
+           </fieldset>
+    </form>
+ </body>
+ </html>
+
+ 
