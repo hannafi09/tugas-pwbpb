@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Menghitung Luas dan Keliling Persegi Panjang</title>
+<script type="text/javascript">
+     function hitungluaskeliling(){
+     r=document.getElementById("r").value;
+     luas= 2*Math.PI*r*r;
+     keliling=2*Math.PI*r
+     document.getElementById("luas").value=luas;
+     document.getElementById("keliling").value=keliling;
+    }
+</script>
+</head>
+<body>
+   <form>
+    <h4>Menghitung Luas dan keliling Persegi Panjang</h4>
+      <table>
+              <td>Masukkan R</td>
+              <td>:</td>
+              <td><input type="text" id="r" name="r"></td>
+         </tr> 
+          <tr>
+              <td>luas</td>
+              <td>:</td>
+              <td><input type="text"  id="luas" name="luas" disabled="true" size="5"></td>
+         </tr>
+          <tr>
+              <td>Keliling</td>
+              <td>:</td>
+              <td><input type="text"  id="keliling" name="keliling" disabled="true" size="5"></td>
+         </tr>
+         <tr>
+              <td></td>
+              <td></td>
+              <td><input type="button" value="hitung luas keliling" onClick="hitungluaskeliling()"></td>
+         </tr>
+        </table>
+    </form>
+</body>
+</html>
